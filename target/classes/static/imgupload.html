@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片上传demo</title>
+</head>
+<body>
+<!--上传格式-->
+<form action="imageRecognition" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <input type="submit" value="提交"/>
+</form>
+<!--
+    返回格式
+    {"log_id": 5793070963383241838, "result_num": 5, "result": [{"score": 0.852848470211029, "name": "橙子"}, {"score": 0.09319709986448288, "name": "葡萄柚"}, {"score": 0.04507619887590408, "name": "西柚"}, {"score": 0.005597161129117012, "name": "柚子"}, {"score": 0.0012650687713176012, "name": "酸橙"}]}
+-->
+</body>
+</html>

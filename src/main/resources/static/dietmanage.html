@@ -1,0 +1,247 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=yes" />
+    <title>FitDiet</title>
+    <!-- head 中 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+
+    <!-- body 最后 -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+
+
+    <!-- 页面CSS样式 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+</head>
+
+<body>
+    <!--<div class="app">
+        <div class="win">
+            <div class="view">-->
+                <div class="user-box">
+                    <div class="user-left">
+                        <a href="#" class="user-img" style="background:url(images/user-img.jpg);background-size: cover;"></a>
+                    </div>
+                    <div class="user-right" style="width: 65%;margin-left: 45%;margin-top: 1%;">
+                        <div>
+                            <p>用户：</p>
+                            <span style="padding: 12px">大东</span>
+                            <div style="height: 18px; margin-left: 100px;" class="imgs clear">
+                                <div class="img fl hide"></div>
+                                <div class="add fl"></div>
+                                <form action="/imageRecognition" method="post" enctype="multipart/form-data">
+                                    <input type="file" src="./img/qrcode.jpeg" style="display: block" class="hide" id="upimg3" accept="image/*" name="file">
+                                    <input type="submit" value="提交"/>
+                                </form>
+                            </div>
+                        </div>
+                        <div><p>蛋白质: </p><span style="padding: 12px">250g</span></div>
+                        <div><p>糖类: </p><span style="padding: 12px">65g</span></div>
+                        <div><p>脂肪: </p><span style="padding: 12px">30g</span></div>
+                    </div>
+
+                </div>
+                <h4 class="bd_white wd-dqsj" style="text-align:left;margin-bottom: 1px;margin-top: 15px;">
+                    今日记录
+                    <!--<span id="date"></span>
+                    <span id="day"></span>
+                    <span id="week"></span>-->
+                </h4>
+            <!--</div>-->
+
+            <div class="all_title">
+                <style>
+                    [data-target] {
+                        border-bottom: 10px solid #F3F3F3;
+                    }
+
+                    .weui-form-preview__item img {
+                        float: left;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+
+                    .labelcolor {
+                        color: #1f9af3;
+                    }
+
+                    .weui-form-preview-margin {
+                        margin-top: 5px;
+                    }
+
+                    div [id] {
+                        display: none;
+                        border: none;
+                    }
+                </style>
+                <div class="container stusys_con">
+                    <div class="page preview js_show">
+                        <div class="page__bd">
+                            <div class="weui-form-preview">
+                                
+                                <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
+                                    <div class="weui-form-preview__item">
+                                        <a href="dietrecord.html">  <img src="img/MyImage/unfold.png" style="float: right;">  </a>
+                                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">早餐</label>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="weui-form-preview__hd js-item" data-target="#CourseGrade">
+                                    <div class="weui-form-preview__item">
+                                        <a href="dietrecord.html">  <img src="img/MyImage/unfold.png" style="float: right;">  </a>
+                                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">午餐</label>
+                                    </div>
+                                </div>
+                                <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
+                                    <div class="weui-form-preview__item">
+                                        <a href="dietrecord.html">  <img src="img/MyImage/unfold.png" style="float: right;">  </a>
+                                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">晚餐</label>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="weui-form-preview__hd js-item" data-target="#CourseGrade">
+                                    <div class="weui-form-preview__item">
+                                        <a href="dietrecord.html">  <img src="img/MyImage/unfold.png" style="float: right;">  </a>
+                                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">加餐</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- footer -->
+            <footer style="margin-top: 75px;">
+                <ul>
+                    <!--未点击CLASS为 icon-home-on  点击后 icon-home-on  --->
+                    <li><a href="dietmanage.html"><i class="icon iconfont icon-home i-36"></i>膳食控制</a> </li>
+                    <!--未点击CLASS为 icon-gongneng  点击后 icon-gongneng-on --->
+                    <li><a href="foodandnews.html"><i class="icon iconfont icon-gongneng i-36"></i>健康咨询</a></li>
+                    <!--未点击CLASS为 icon-down 点击后 icon-down-on --->
+                    <li><a href="me.html"><i class="icon iconfont icon-down i-36"></i>个人中心</a></li>
+                </ul>
+            </footer>
+        <!--</div>
+    </div>-->
+    <script>
+        //图片预览
+        $('.add' ).on('click',function(){
+            var this_ = $(this );
+            var ua = navigator.userAgent.toLowerCase();
+            var isiOS = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);  // ios终端
+            if(!isiOS){
+                this_.next("input").attr('capture','camera');
+            }
+            this_.next("input").fadeOut();
+            // 这里是为了能够多次选定同一张图片
+            this_.after('<input type="file" class="hide" id="upimg4" accept="image/*">');
+            var imglen = this_.parent(".imgs").children('.img').children("img").length;
+            this_.next("input").click().off("change").on('change',function(){
+                var size = (this_.next("input")[0].files[0].size / 1024).toFixed(2);
+                if(size <= 5120){
+                    var img = this_.next("input")[0].files[0];
+                    var formData = new FormData();
+                    formData.append("picture",img);
+                    uploadPic(formData,this_,imglen);
+                } else {
+                    swal({
+                        title: ' ',
+                        text: '您的图片超过5M',
+                        type: 'warning',
+                        showConfirmButton:false,
+                        timer:1500
+                    });
+                }
+            });
+        });
+
+        function imgresize(){
+            setTimeout(function(){
+                var img = $('.img>img' );
+                img.each(function(){
+                    $(this).height('5vw');
+                    $(this).width('5vw');
+                });
+            },100);
+        }
+
+        var uploadPic = function(formData,this_,imglen){
+            $.ajax({
+                type:"post",
+                url:"{:Url('File/uploadPicture')}",
+                data:formData,
+                cache: false,
+                processData : false,
+                contentType : false,
+                beforeSend: function(XMLHttpRequest){
+                    $('.swal2-confirm' ).css({'background-color':'#c1c1c1','border-left-color':'#c1c1c1','border-right-color':'#c1c1c1'})
+                },
+                success:function(data){
+                    alert(data)
+                    if(imglen >= 3){
+                        this_.hide();
+                    }
+                    swal.close();
+                    var msg = $.parseJSON(data);
+                    if(msg.code == 1){
+                        if(this_.hasClass('add')){
+                            //图片添加
+                            this_.parent('.imgs').children(".img").eq(imglen).removeClass('hide' )
+                                .append('<img src='+msg.data.path+' alt="图片" data-tab='+msg.data.id+'><span><img src="/home/images/common/default.png" alt=""></span>');
+
+                            // 删除图片
+                            $(".img span").on("click", function () {
+                                $(this).parent(".img").remove();
+                                this_.fadeIn();
+                                this_.before('<div class="img fl hide"></div>');
+                            });
+
+                            // 图片点击修改
+                            /*$(".img>img").on("click", function () {
+                             $(this).parent(".img").remove();
+                             this_.fadeIn().click();
+                             this_.before('<div class="img fl hide"></div>');
+                             });*/
+                        }else{
+                            //图片修改
+                            this_.find('img').remove();
+                            this_.append('<img src='+msg.data.path+' alt="图片" data-tab='+msg.data.id+'>');
+                        }
+                        imgresize();
+
+                    } else {
+                        return '';
+                    }
+                },
+                error:function(data){
+                    alert(JSON.stringify(data));
+                }
+            });
+        }
+    </script>
+</body>
+</html>
