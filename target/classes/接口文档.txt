@@ -1,5 +1,6 @@
-登录接口：login?userName=?&password=?
+登录接口：http://localhost:8080/login?userName=%E5%BC%A0%E4%B8%89&password=%E6%9D%8E%E5%9B%9B
 返回值：success、fail
+测试账户：username=张三&password=李四
 
 图片上传接口：
 <form action="imageRecognition" method="post" enctype="multipart/form-data">
@@ -8,3 +9,12 @@
 </form>
 返回值:
 {"log_id": 5793070963383241838, "result_num": 5, "result": [{"score": 0.852848470211029, "name": "橙子"}, {"score": 0.09319709986448288, "name": "葡萄柚"}, {"score": 0.04507619887590408, "name": "西柚"}, {"score": 0.005597161129117012, "name": "柚子"}, {"score": 0.0012650687713176012, "name": "酸橙"}]}
+
+获取重量接口：http://localhost:8080/getWeight
+返回值：0.3483262，单位kg？
+
+搜索食材接口：http://localhost:8080/retrieval?key=%E8%8B%B9%E6%9E%9C
+返回值：["苹果","苹果醋","苹果派","苹果罐头"]
+
+获取摄入历史接口：http://localhost:8080/getHistory
+返回值：{"2":{"nutrition":{"protein":0.0126345465,"fat":0.03761304,"sugar":0.011250665}},"3":{"nutrition":{"protein":0.013655215,"fat":0.0015186768,"sugar":0.006135279}},"4":{"nutrition":{"protein":0.012744835,"fat":0.011814519,"sugar":0.010279498}},"5":{"nutrition":{"protein":0.0023956187,"fat":0.036111556,"sugar":0.06139147}},"6":{"nutrition":{"protein":0.0051307264,"fat":0.010836426,"sugar":0.018034328}}}
