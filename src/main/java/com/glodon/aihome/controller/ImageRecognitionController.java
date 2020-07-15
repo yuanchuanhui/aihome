@@ -17,7 +17,7 @@ public class ImageRecognitionController {
     @ResponseBody
     public String imageRecognition(@RequestParam(value = "file")MultipartFile file) throws IOException {
         System.out.println(file.getSize());
-        return "success";
+        return BaiduAPIService.ingredient(file.getBytes());
     }
 
 }

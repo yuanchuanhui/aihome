@@ -1,5 +1,6 @@
 登录接口：login?userName=?&password=?
 返回值：success、fail
+测试账户：username=张三&password=李四
 
 图片上传接口：
 <form action="imageRecognition" method="post" enctype="multipart/form-data">
