@@ -41,4 +41,23 @@ public class UserController {
         return user.getMeals();
     }
 
+    @RequestMapping("updateUserInfo")
+    @ResponseBody
+    public boolean updateUserInfo(Integer height, Integer weight, Double fatRate){
+        user.setHeight(height);
+        user.setHeight(weight);
+        user.setFatRate(fatRate);
+        return true;
+    }
+
+    @RequestMapping("getUserInfo")
+    @ResponseBody
+    public Map<String, String> getUserInfo(String userName){
+        Map<String, String> res = new HashMap<>();
+        res.put("height", user.getHeight() + "");
+        res.put("weight", user.getWeight() + "");
+        res.put("fatRate", user.getFatRate() + "");
+        return res;
+    }
+
 }

@@ -16,13 +16,16 @@ public class User {
     private Map<Integer, NutritionOfDay> meals;
     private List<HealthNews> favorites = new ArrayList<>();
     private List<HealthNews> all = new ArrayList<>();
+    private Integer height;
+    private Integer weight;
+    private Double fatRate;
 
     public User() throws IOException {
         this.meals = new HashMap<>();
         int today = Calendar.getInstance().get(Calendar.DAY_OF_YEAR);
         // 填充用户历史信息
         for (int i = 1; i < 5; i++) {
-            WeightController.getWeight("苹果", today - i, this);
+            WeightController.getWeight("苹果", today - i, (int) (Math.random() * 24), this);
         }
         BufferedReader bf = new BufferedReader(new InputStreamReader(NewsTest.class.getClassLoader().getResourceAsStream("news/all.txt")));
         String line = null;
@@ -78,5 +81,29 @@ public class User {
 
     public void setAll(List<HealthNews> all) {
         this.all = all;
+    }
+
+    public Integer getHeight() {
+        return height;
+    }
+
+    public void setHeight(Integer height) {
+        this.height = height;
+    }
+
+    public Integer getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+
+    public Double getFatRate() {
+        return fatRate;
+    }
+
+    public void setFatRate(Double fatRate) {
+        this.fatRate = fatRate;
     }
 }
