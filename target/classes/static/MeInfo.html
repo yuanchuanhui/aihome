@@ -43,15 +43,15 @@
             <div class="weui-form-preview__bd">
                 <div class="weui-form-preview__item">
                     <label class="weui-form-preview__label">身高</label>
-                    <span class="weui-form-preview__value">180cm</span>
+                    <span id="height" class="weui-form-preview__value">180cm</span>
                 </div>
                 <div class="weui-form-preview__item">
                     <label class="weui-form-preview__label">体重</label>
-                    <span class="weui-form-preview__value">75kg</span>
+                    <span id="weight" class="weui-form-preview__value">75kg</span>
                 </div>
                 <div class="weui-form-preview__item">
                     <label class="weui-form-preview__label">体脂率</label>
-                    <span class="weui-form-preview__value">30%</span>
+                    <span id="fatRate" class="weui-form-preview__value">30%</span>
                 </div>
                 <div class="weui-form-preview__item">
                     <label class="weui-form-preview__label">*******</label>
@@ -67,23 +67,41 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
-    <script>
-        $(function () {
-            FastClick.attach(document.body);
-        });
-    </script>
 
 
-
-
+    <div class="demos-content-padded">
+        <a href="javascript:;" id="show-actions" class="weui-btn weui-btn_primary" style="background: #1892f9;width: 60%;margin-bottom: 20px;display: block;margin-top: 40px;">
+            设置个人信息
+        </a>
+    </div>
 </body>
 
 
+<script>
+    $(function(){
+        $.get("getUserInfo", {userName:"张三"}, function (json) {
+            $("#height").html(json.height);
+            $("#weight").html(json.weight);
+            $("#fatRate").html(json.fatRate);
+        });
 
+        $('#show-actions').on('click', function () {
+            $.get("updateUserInfo", { height:175, weight: 65, fatRate:25}, function(json) {
+                 $(".weui-loadmore").css('display','block');
+                 $.showLoading("设备连接中");
+                 setTimeout(function() {
+                       $.hideLoading();
+                       $.toast("信息设置成功", function() {
+                            console.log("cancel");
+                            $("#height").html("175 cm");
+                            $("#weight").html("65 kg");
+                            $("#fatRate").html("25%");
+                       });
+                 },1500);
+            });
+        })
+    })
+</script>
 
 </html>

@@ -24,7 +24,7 @@ public class UserController {
     public String login(
             @RequestParam(value = "userName") String userName,
             @RequestParam(value = "password") String password){
-        if(userName.equals("张三") && password.equals("李四")){
+        if(userName.equals("admin") && password.equals("123456")){
             user.setUserName(userName);
             user.setPassword(password);
             return "success";

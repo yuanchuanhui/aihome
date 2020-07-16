@@ -28,25 +28,26 @@
         <style>
             .file {
                 position: relative;
-                display: inline-block;
-                background: rgb(24, 146, 249);
-                border: 1px solid #99D3F5;
+<!--            display: inline-block;-->
+                background-color: blue;
+<!--                border: 1px solid #99D3F5;-->
                 border-radius: 4px;
-                padding: 4px 52px;
+                padding: 15px 40px;
                 overflow: hidden;
                 color: #FFF;
                 text-decoration: none;
                 text-indent: 0;
                 line-height: 37px;
-                margin-left: 58px;
+                margin:0 auto;
             }
 
                 .file input {
-                    position: absolute;
-                    font-size: 100px;
+                    position: relative;
+                    font-size: 15px;
                     right: 0;
                     top: 0;
-                    opacity: 0;
+                    background-color: rgb(217, 217, 217);
+<!--                opacity: 0;-->
                 }
 
                 .file:hover {
@@ -55,6 +56,7 @@
                     color: #004974;
                     text-decoration: none;
                 }
+
         </style>
     </head>
 
@@ -103,21 +105,15 @@
 
                     <div id="VacaApply" class="weui-tab__bd-item">
                         <div class="weui-cells weui-cells_form stumag_con_line">
-
                             <div class="weui-btn-area evaform_con_btn">
-                                <!--<a class="weui-btn weui-btn_primary">
-        <input type="file" class="hide weui-btn weui-btn_primary" id="upimg3" accept="image/*" name="file">  拍照上传图片
-    </a>-->
-                               
-
-                                <a href="javascript:;" class="file">
-                                    选择文件
-                                    <input type="file" name="" id="">
-                                </a>
-                            </div>
-
-                            <div class="weui-btn-area evaform_con_btn">
-                                <a class="weui-btn weui-btn_primary" id="btnStuMagSubmit" onclick="submit();">提交</a>
+                              <div style="height: 80px; margin:0 auto;" class="imgs clear">
+                                        <div class="img fl hide"></div>
+                                               <div class="add fl"></div>
+                                                     <form class="file" style="background-color: #AADFFD;" action="/imageRecognition" method="post" enctype="multipart/form-data">
+                                                           <input type="file" src="./img/qrcode.jpeg" style="display: block;margin-bottom: 15px;" class="hide" id="upimg3" accept="image/*" name="file" value="拍照上传">
+                                                           <input type="submit" value="提交文件"/>
+                                                     </form>
+                                        </div>
                             </div>
                         </div>
                     </div>
@@ -148,9 +144,31 @@
             })
         </script>
 
-        // 图片上传
         <script>
-            //图片预览
+<!--                $("#uoloads").change(function () {-->
+<!--                    var this_ = $(this);-->
+<!--                    console.log("12345");-->
+<!--                    console.log($("#uoloads"));-->
+<!--                    var file = document.getElementById("uoloads").files[0];-->
+<!--                    var size = (file.size / 1024).toFixed(2);-->
+<!--                    console.log(size);-->
+<!--                    if (size <= 5120) {-->
+<!--                        var img = file;-->
+<!--                        var formData = new FormData();-->
+<!--                        formData.append("picture", img);-->
+<!--                        uploadPic(formData, this_, 1);-->
+<!--                    } else {-->
+<!--                        swal({-->
+<!--                            title: ' ',-->
+<!--                            text: '您的图片超过5M',-->
+<!--                            type: 'warning',-->
+<!--                            showConfirmButton: false,-->
+<!--                            timer: 1500-->
+<!--                        });-->
+<!--                    }-->
+<!--                });-->
+
+
             $('.add').on('click', function () {
                 var this_ = $(this);
                 var ua = navigator.userAgent.toLowerCase();
@@ -203,7 +221,7 @@
                         $('.swal2-confirm').css({ 'background-color': '#c1c1c1', 'border-left-color': '#c1c1c1', 'border-right-color': '#c1c1c1' })
                     },
                     success: function (data) {
-                        alert(data)
+                        console.log(data)
                         if (imglen >= 3) {
                             this_.hide();
                         }

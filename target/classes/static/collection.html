@@ -56,37 +56,35 @@
                           </p>
                       </header>
                       <ul class="grms-ul">
-                          <li>
-                              <a href="#">
-                                  <p><i class="icon iconfont icon-xinxi"></i> 丁香日报   2020/7/13</p>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <p><i class="icon iconfont icon-xinxi"></i>丁香日报   2020/7/12</p>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <p><i class="icon iconfont icon-xinxi"></i>丁香日报   2020/7/12</p>                              
-                              </a>
-                          </li>
+
                       </ul>
 
                   </div>
   			  </div>
   			  <!-- footer -->
-  			  <footer>
-                  <ul>
-                      <!--未点击CLASS为 icon-home-on  点击后 icon-home-on  --->
-                      <li><a href="首页.html"><i class="icon iconfont icon-home i-36"></i>膳食控制</a> </li>
-                      <!--未点击CLASS为 icon-gongneng  点击后 icon-gongneng-on --->
-                      <li><a href="功能.html"><i class="icon iconfont icon-gongneng i-36"></i>健康咨询</a></li>
-                      <!--未点击CLASS为 icon-down 点击后 icon-down-on --->
-                      <li><a href="下载.html"><i class="icon iconfont icon-down i-36"></i>个人中心</a></li>
-                  </ul>
-       </footer>
-  </div>
+  			  <footer class="footer">
+              </footer>
+             <script>
+                  $(".footer").load("footer.html");
+             </script>
+
+        </div>
 </div>
 </body>
 </html>
+
+<script>
+    $(function(){
+        $.get("getFavorites", { }, function (json) {
+                $.each(json, function (i,val) {
+                    var html = `<li>
+                                    <a href="#">
+                                         <p><i class="icon iconfont icon-xinxi"></i> ${val.content}   </p>
+                                    </a>
+                                 </li>`;
+                     $(".grms-ul").append(html);
+                });
+        });
+    })
+</script>
+
