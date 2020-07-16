@@ -1,9 +1,6 @@
 package com.glodon.aihome.controller;
 
-import com.glodon.aihome.entity.MealTime;
-import com.glodon.aihome.entity.Nutrition;
-import com.glodon.aihome.entity.NutritionOfDay;
-import com.glodon.aihome.entity.User;
+import com.glodon.aihome.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -71,12 +68,33 @@ public class WeightController {
         return map;
     }
 
+    /**
+     * [日期-[餐次-种类-重量]]
+     */
     @RequestMapping("getUserMealHistory")
     @ResponseBody
-    public Map<Integer, Map<Integer, Map<String, Double>>> getUserMealHistory(){
-        Map<Integer, Map<Integer, Map<String, Double>>> res = new HashMap<>();
+    public List<MealHistoryAndDate> getUserMealHistory(){
+        List<MealHistoryAndDate> res = new ArrayList<>();
         for (Map.Entry<Integer, NutritionOfDay> entry : user.getMeals().entrySet()) {
-            res.put(entry.getKey(), entry.getValue().getMealHistory());
+            MealHistoryAndDate history = new MealHistoryAndDate();
+            history.setDate(entry.getKey());
+            List<Map<String, Object>> list = new ArrayList<>();
+            Map<Integer, Map<String, Double>> mealHistory = entry.getValue().getMealHistory();
+            for (Map.Entry<Integer, Map<String, Double>> mapEntry : mealHistory.entrySet()) {
+                Map<String, Object> map = new HashMap<>();
+                map.put("mealtime", mapEntry.getKey());
+                List<Meal> meals = new ArrayList<>();
+                for (Map.Entry<String, Double> stringDoubleEntry : mapEntry.getValue().entrySet()) {
+                    Meal meal = new Meal();
+                    meal.setName(stringDoubleEntry.getKey());
+                    meal.setWeight(stringDoubleEntry.getValue());
+                    meals.add(meal);
+                }
+                map.put("meal", meals);
+                list.add(map);
+            }
+            history.setMealHistoryOfDay(list);
+            res.add(history);
         }
         return res;
     }

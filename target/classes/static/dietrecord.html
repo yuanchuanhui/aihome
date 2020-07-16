@@ -109,9 +109,9 @@
                               <div style="height: 80px; margin:0 auto;" class="imgs clear">
                                         <div class="img fl hide"></div>
                                                <div class="add fl"></div>
-                                                     <form class="file" style="background-color: #AADFFD;" action="/imageRecognition" method="post" enctype="multipart/form-data">
-                                                           <input type="file" src="./img/qrcode.jpeg" style="display: block;margin-bottom: 15px;" class="hide" id="upimg3" accept="image/*" name="file" value="拍照上传">
-                                                           <input type="submit" value="提交文件"/>
+                                                     <form id="imgform" class="file" style="background-color: #AADFFD;" action="/imageRecognition" method="post" enctype="multipart/form-data">
+                                                           <input type="file" src="./img/qrcode.jpeg" style="display: block;margin-bottom: 15px;" class="hide" id="upimg3" accept="image/*" name="file" value="拍照上传" onchange="document.getElementById('imgform').submit()">
+<!--                                                           <input type="submit" value="提交文件"/>-->
                                                      </form>
                                         </div>
                             </div>

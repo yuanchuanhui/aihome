@@ -1,5 +1,8 @@
 package com.glodon.aihome.baiduapiinvoke;
 
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
 import java.net.URLEncoder;
 
 /**
@@ -9,11 +12,8 @@ public class BaiduAPIService {
 
     public static String ingredient(String file) {
         // 请求url
-        String url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/classify/ingredient";
         try {
-            // 本地文件路径
-            String filePath = file;
-            byte[] imgData = FileUtil.readFileByBytes(filePath);
+            byte[] imgData = FileUtil.readFileByBytes(file);
             return ingredient(imgData);
         } catch (Exception e) {
             e.printStackTrace();
@@ -25,7 +25,6 @@ public class BaiduAPIService {
         // 请求url
         String url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/classify/ingredient";
         try {
-            // 本地文件路径
             String imgStr = Base64Util.encode(imgData);
             String imgParam = URLEncoder.encode(imgStr, "UTF-8");
             String param = "image=" + imgParam;
@@ -39,10 +38,12 @@ public class BaiduAPIService {
         return null;
     }
 
-    public static void main(String[] args) {
-        String dir = "/home/ych/IdeaProjects/hadoop/src/main/resources/";
-        System.out.println(BaiduAPIService.ingredient(dir + "orange_strawberry.png"));
-        System.out.println(BaiduAPIService.ingredient(dir + "orange.png"));
-        System.out.println(BaiduAPIService.ingredient(dir + "strawberry.png"));
+    public static void main(String[] args) throws Exception{
+        URL url = new URL("https://img.bemfa.com/9ff645b1dc924fb39d69dae76fe864d5-d31d40dd26ba770caabbb8b58c03efd1-1594896579.jpg");
+        URLConnection conn = url.openConnection();
+        InputStream inputStream = conn.getInputStream();
+        byte[] bytes = new byte[inputStream.available()];
+        inputStream.read(bytes);
+        System.out.println(ingredient(bytes));
     }
 }
