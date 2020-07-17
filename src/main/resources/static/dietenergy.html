@@ -1,10 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=yes" />
+    <title>FitDiet</title>
+    <!-- head 中 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+
+    <!-- body 最后 -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+
+
+    <!-- 页面CSS样式 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+    <style>
+        .studeginfo_list .weui-panel__hd, .studegxscg_list .studegxscg_list_title {
+            font-size: 1.0em;
+            color: rgb(24, 146, 249);
+            font-weight: bold;
+            background: rgb(239, 247, 254);
+            border-bottom: 1px solid rgb(195, 225, 249);
+            border-radius: 10px 10px 0px 0px;
+        }
+    </style>
+
 </head>
-<body>
+
+
+<body ontouchstart="">
+<div class="weui-flex layout_ico about_topware_title">
+    <a href="javascript:history.back(-1)"><img style="margin:10px 0px 0px 0px;" src="img/MyImage/back.png"></a>
+    <div class="weui-flex__item"><label>今日能量摄入</label></div>
+    <a href="dietmanage.html" style="margin-right:10px;"><img style="margin:10px 0px 0px 0px;" src="img/MyImage/home_nav.png"></a>
+</div>
+<div class="all_title" style="margin-top: 43px;height:520px;overflow:auto">
+    <div class="studeginfo_placeholder"></div>
+    <div class="weui-form-preview studeginfo_list">
+        <div class="weui-panel__hd">热量  180g</div>
+        <div class="weui-form-preview__bd">
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">牛肉</label>
+                <span id="height" class="weui-form-preview__value">20g</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">猪肉</label>
+                <span id="weight" class="weui-form-preview__value">30kg</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">芹菜</label>
+                <span id="fatRate" class="weui-form-preview__value">15g</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">调料</label>
+                <span class="weui-form-preview__value">30g</span>
+            </div>
+        </div>
+    </div>
+    <div class="weui-form-preview studeginfo_list">
+        <div class="weui-panel__hd">糖类  180g</div>
+        <div class="weui-form-preview__bd">
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">牛肉</label>
+                <span id="height" class="weui-form-preview__value">20g</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">猪肉</label>
+                <span id="weight" class="weui-form-preview__value">30kg</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">芹菜</label>
+                <span id="fatRate" class="weui-form-preview__value">15g</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">调料</label>
+                <span class="weui-form-preview__value">30g</span>
+            </div>
+        </div>
+    </div>
+    <div class="weui-form-preview studeginfo_list">
+        <div class="weui-panel__hd">脂肪  180g</div>
+        <div class="weui-form-preview__bd">
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">牛肉</label>
+                <span id="height" class="weui-form-preview__value">20g</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">猪肉</label>
+                <span id="weight" class="weui-form-preview__value">30kg</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">芹菜</label>
+                <span id="fatRate" class="weui-form-preview__value">15g</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">调料</label>
+                <span class="weui-form-preview__value">30g</span>
+            </div>
+        </div>
+    </div>
+    <div class="weui-form-preview studeginfo_list">
+        <div class="weui-panel__hd">蛋白质  180g</div>
+        <div class="weui-form-preview__bd">
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">牛肉</label>
+                <span id="height" class="weui-form-preview__value">20g</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">猪肉</label>
+                <span id="weight" class="weui-form-preview__value">30kg</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">芹菜</label>
+                <span id="fatRate" class="weui-form-preview__value">15g</span>
+            </div>
+            <div class="weui-form-preview__item">
+                <label class="weui-form-preview__label">调料</label>
+                <span class="weui-form-preview__value">30g</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer -->
+    <footer class="weui-footer_fixed-bottom footer" style="bottom: 0em;">
+    </footer>
+    <script>
+         $(".footer").load("footer.html");
+    </script>
 
 </body>
 </html>

@@ -106,7 +106,7 @@
 					<div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
 						<div class="weui-form-preview__item">
 							<div> <img src="images/run.png" class="device"> </div>
-							<a href="dietrecord.html">  <img src="images/select.png"  style="float: right;">  </a>
+							<a href="#">  <img src="images/select.png"  style="float: right;">  </a>
 							<label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">减体重</label>
 						</div>
 					</div>
@@ -171,7 +171,7 @@
 					<div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
 						<div class="weui-form-preview__item">
 							<div> <img src="images/defatting.png" class="device"> </div>
-							<a href="dietrecord.html">  <img src="img/MyImage/unfold.png"  style="float: right;">  </a>
+							<a href="#" class="add">  <img src="img/MyImage/unfold.png"  style="float: right;">  </a>
 							<label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">减脂增肌</label>
 						</div>
 					</div>
@@ -180,7 +180,7 @@
 					<div class="weui-form-preview__hd js-item" data-target="#CourseGrade">
 						<div class="weui-form-preview__item">
 							<div> <img src="images/vegediet.png" class="device"> </div>
-							<a href="dietrecord.html">  <img src="img/MyImage/unfold.png"  style="float: right;">  </a>
+							<a href="#" class="add">  <img src="img/MyImage/unfold.png"  style="float: right;">  </a>
 							<label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">素食主义</label>
 						</div>
 					</div>
@@ -205,4 +205,19 @@
 <!--</div>
 </div>-->
 </body>
+<script>
+        $('.add').on('click', function () {
+             $.confirm("确认增加计划？", function() {
+                 //点击确认后的回调函数
+                 $.showLoading("添加计划中");
+                 setTimeout(function() {
+                       $.hideLoading();
+                       $.toast("添加计划成功", function() {
+                            console.log("cancel");
+                       });
+                 },2000);
+             })
+        })
+ </script>
+
 </html>

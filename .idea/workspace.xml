@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d421c31f-f21b-474d-b79b-30abecfcdf7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dietenergy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/recordinput.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/scan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/MyImage/delete2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/MyImage/scan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/MyImage/scan1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/MyImage/scan2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dietmanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dietmanage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/foodandnews.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/foodandnews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/AuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/FileUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/dietmanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/dietmanage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/foodandnews.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/foodandnews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/History.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/MeInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/meInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dietenergy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dietenergy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dietrecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dietrecord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/MyImage/delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/MyImage/delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/mydevice.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/mydevice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/mygoal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/mygoal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/recordinput.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/recordinput.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/dietrecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/dietrecord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/MyImage/delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/MyImage/delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/mydevice.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/mydevice.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,26 +59,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../FitDiet-v4/aihome" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img/MyImage" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Desktop\FitDiet-v3\aihome\src\main\resources\static\images" />
-      <recent name="D:\Desktop\FitDiet-v3\aihome\src\main\resources\static" />
-      <recent name="D:\Desktop\FitDiet-v3\aihome\src\main\resources\static\css" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/glodon/aihome" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/target/classes" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\FitDiet-v3\aihome\src\main\resources\static\img\MyImage" />
+      <recent name="D:\Desktop\FitDiet-v3\aihome\src\main\resources\static\images" />
+      <recent name="D:\Desktop\FitDiet-v3\aihome\src\main\resources\static" />
+      <recent name="D:\Desktop\FitDiet-v3\aihome\src\main\resources\static\css" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/glodon/aihome" />
     </key>
   </component>
   <component name="RunManager" selected="Application.AIHomeApplication">
@@ -194,22 +200,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594951989180" />
-    <state width="1537" height="291" key="GridCell.Tab.0.bottom" timestamp="1594991648267">
+    <state width="1537" height="291" key="GridCell.Tab.0.bottom" timestamp="1595016224182">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="291" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594991648267" />
-    <state width="1537" height="291" key="GridCell.Tab.0.center" timestamp="1594991648266">
+    <state width="1537" height="291" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595016224182" />
+    <state width="1537" height="291" key="GridCell.Tab.0.center" timestamp="1595016224182">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="291" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594991648266" />
-    <state width="1537" height="291" key="GridCell.Tab.0.left" timestamp="1594991648265">
+    <state width="1537" height="291" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595016224182" />
+    <state width="1537" height="291" key="GridCell.Tab.0.left" timestamp="1595016224182">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="291" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594991648265" />
-    <state width="1537" height="291" key="GridCell.Tab.0.right" timestamp="1594991648266">
+    <state width="1537" height="291" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595016224182" />
+    <state width="1537" height="291" key="GridCell.Tab.0.right" timestamp="1595016224182">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="291" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594991648266" />
+    <state width="1537" height="291" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595016224182" />
     <state x="477" y="128" key="MultipleFileMergeDialog" timestamp="1594953415907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -230,6 +236,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1594953363370" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1595018408773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1595018408773" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594975213073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

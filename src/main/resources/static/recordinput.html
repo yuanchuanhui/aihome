@@ -26,6 +26,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
 
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+
     <style>
         .page {
             padding: 5px 8px;
@@ -70,8 +73,8 @@
                         margin-top: 10px;
                         margin-left: 10px;
                         margin-right: 10px;
-                        width: 20px;
-                        height: 20px;
+                        width: 15px;
+                        height: 15px;
                     }
 
 
@@ -107,28 +110,28 @@
                 <div class="weui-form-preview">
                     <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
                         <div class="weui-form-preview__item">
-                            <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                            <a href="#" class="delete">  <img src="img/MyImage/delete2.png" style="float: right;">  </a>
                             <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">牛肉</label>
                             <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
                         </div>
                     </div>
                     <div class="weui-form-preview__hd js-item" data-target="#CourseGrade">
                         <div class="weui-form-preview__item">
-                            <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                            <a href="#" class="delete">  <img src="img/MyImage/delete2.png" style="float: right;">  </a>
                             <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">芹菜</label>
                             <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
                         </div>
                     </div>
                     <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
                         <div class="weui-form-preview__item">
-                            <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                            <a href="#" class="delete">   <img src="img/MyImage/delete2.png" style="float: right;">  </a>
                             <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">猪肉</label>
                             <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
                         </div>
                     </div>
                         <div class="weui-form-preview__item">
                             <a href="dietrecord.html">  <img class="addfood" src="img/MyImage/unfold.png" style="float: left;">  </a>
-                            <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">点击添加食材</label>
+                            <a href="dietrecord.html" class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">点击添加食材</a>
                         </div>
                 </div>
             </div>
@@ -148,37 +151,35 @@
             <div class="weui-form-preview">
                 <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
                     <div class="weui-form-preview__item">
-                        <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                        <a href="#" class="delete">   <img src="img/MyImage/delete2.png" style="float: right;">  </a>
                         <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">牛肉</label>
                         <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
                     </div>
                 </div>
                 <div class="weui-form-preview__hd js-item" data-target="#CourseGrade">
                     <div class="weui-form-preview__item">
-                        <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                        <a href="#" class="delete">  <img src="img/MyImage/delete2.png" style="float: right;">  </a>
                         <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">芹菜</label>
                         <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
                     </div>
                 </div>
                 <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
                     <div class="weui-form-preview__item">
-                        <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                        <a href="#" class="delete">   <img src="img/MyImage/delete2.png" style="float: right;">  </a>
                         <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">猪肉</label>
                         <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
                     </div>
                 </div>
-                <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
-                    <div class="weui-form-preview__item">
-                        <a href="dietrecord.html">  <img class="addfood" src="img/MyImage/unfold.png" style="float: left;">  </a>
-                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">点击添加食材</label>
-                    </div>
+                <div class="weui-form-preview__item">
+                    <a href="dietrecord.html">  <img class="addfood" src="img/MyImage/unfold.png" style="float: left;">  </a>
+                    <a href="dietrecord.html" class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">点击添加食材</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
     <div class="demos-content-padded">
-        <a href="javascript:;" id="show-actions" class="weui-btn weui-btn_primary" style="background: #1892f9;width: 60%;margin-bottom: 20px;display: block;margin-top: 20px;">
+        <a href="dietenergy.html" id="show-actions" class="weui-btn weui-btn_primary" style="background: #1892f9;width: 60%;margin-bottom: 20px;display: block;margin-top: 20px;">
             查看食材能量
         </a>
     </div>
@@ -200,4 +201,15 @@
 <!--</div>
 </div>-->
 </body>
+
+<script>
+    $(".delete").click(function () {
+        var e = $(this).parent().parent();
+        $.confirm("确认删除该食材么？", function() {
+             //点击确认后的回调函数
+             $(e).css("display","none");
+         })
+     });
+</script>
+
 </html>
