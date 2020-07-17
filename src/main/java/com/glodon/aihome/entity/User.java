@@ -25,7 +25,7 @@ public class User {
         int today = Calendar.getInstance().get(Calendar.DAY_OF_YEAR);
         // 填充用户历史信息
         for (int i = 1; i < 5; i++) {
-            WeightController.getWeight("苹果", today - i, (int) (Math.random() * 24), this);
+            WeightController.getWeight("苹果", today - i, (int) (Math.random() * 4), this);
         }
         BufferedReader bf = new BufferedReader(new InputStreamReader(NewsTest.class.getClassLoader().getResourceAsStream("news/all.txt")));
         String line = null;

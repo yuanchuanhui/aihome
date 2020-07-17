@@ -37,14 +37,14 @@ public class WeightController {
         }
         // 添加食品历史
         Map<Integer, Map<String, Double>> mealHistory = nutritionOfDay.getMealHistory();
-        int flag = 0;
-        if(hour < 11 && hour >= 5){
-            flag = MealTime.BREAKFAST;
-        }else if(hour < 16 && hour >= 11){
-            flag = MealTime.LUNCH;
-        }else if(hour < 22 && hour >= 16){
-            flag = MealTime.DINNER;
-        }
+        int flag = hour;
+//        if(hour < 11 && hour >= 5){
+//            flag = MealTime.BREAKFAST;
+//        }else if(hour < 16 && hour >= 11){
+//            flag = MealTime.LUNCH;
+//        }else if(hour < 22 && hour >= 16){
+//            flag = MealTime.DINNER;
+//        }
         if(mealHistory.containsKey(flag)){
             mealHistory.get(flag).put(mealType, mealHistory.get(flag).getOrDefault(mealType, 0d) + weight);
         }else {
@@ -66,37 +66,6 @@ public class WeightController {
         map.put(Nutrition.SUGAR, (float) (Math.random() * 0.3));
         map.put(Nutrition.FAT, (float) (Math.random() * 0.3));
         return map;
-    }
-
-    /**
-     * [日期-[餐次-种类-重量]]
-     */
-    @RequestMapping("getUserMealHistory")
-    @ResponseBody
-    public List<MealHistoryAndDate> getUserMealHistory(){
-        List<MealHistoryAndDate> res = new ArrayList<>();
-        for (Map.Entry<Integer, NutritionOfDay> entry : user.getMeals().entrySet()) {
-            MealHistoryAndDate history = new MealHistoryAndDate();
-            history.setDate(entry.getKey());
-            List<Map<String, Object>> list = new ArrayList<>();
-            Map<Integer, Map<String, Double>> mealHistory = entry.getValue().getMealHistory();
-            for (Map.Entry<Integer, Map<String, Double>> mapEntry : mealHistory.entrySet()) {
-                Map<String, Object> map = new HashMap<>();
-                map.put("mealtime", mapEntry.getKey());
-                List<Meal> meals = new ArrayList<>();
-                for (Map.Entry<String, Double> stringDoubleEntry : mapEntry.getValue().entrySet()) {
-                    Meal meal = new Meal();
-                    meal.setName(stringDoubleEntry.getKey());
-                    meal.setWeight(stringDoubleEntry.getValue());
-                    meals.add(meal);
-                }
-                map.put("meal", meals);
-                list.add(map);
-            }
-            history.setMealHistoryOfDay(list);
-            res.add(history);
-        }
-        return res;
     }
 
 }

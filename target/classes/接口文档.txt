@@ -35,6 +35,15 @@ PS:可缺少某些参数，即只有明确写了更新某些参数才会更新�
 PS：键值对中某些值可能为空，在服务器中以包装类型的形式存在
 
 查询用户饮食记录：原理，每请求一次重量信息则记录一次食品种类和重量，请求时将记录返回即可
-接口：http://localhost:8080/getUserMealHistory
+接口：http://localhost:8080/getUserMealHistory?date=2020-7-20&eatTime=1
 返回值：[{"date":195,"mealHistoryOfDay":[{"meal":[{"name":"苹果","weight":0.05805192142724991}],"mealtime":0}]},{"date":196,"mealHistoryOfDay":[{"meal":[{"name":"苹果","weight":0.34661540389060974}],"mealtime":0}]},{"date":197,"mealHistoryOfDay":[{"meal":[{"name":"苹果","weight":0.43099409341812134}],"mealtime":2}]},{"date":198,"mealHistoryOfDay":[{"meal":[{"name":"苹果","weight":0.48006996512413025}],"mealtime":3}]}]
 PS:0.1.2.3代表四个时间段，具体那个时间段见MealTime类。193代表一年中的第几天，即第一个数字是天，第二个数字是早中晚餐，第三个参数是种类，第四个是单位为kg的重量
+
+增加饮食记录接口：http://localhost:8080/addUserMeal?date=2020-7-20&eatTime=1&food=%E8%8B%B9%E6%9E%9C
+返回值：success /  fail
+eattime=1,2,3,0，代表早午晚餐和加餐
+date是日期，类型是字符串，我从前端可以很方便获取到
+PS:日期格式2020-7-20，实现方便吗；且最好用eatTime而不是eattime，驼峰命名法
+
+删除饮食记录接口：http://localhost:8080/deleteUserMeal?date=2020年7月20日&eattime=1
+返回值：success /  fail

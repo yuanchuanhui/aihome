@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d421c31f-f21b-474d-b79b-30abecfcdf7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/baiduapiinvoke/tcp/MySocketClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/baiduapiinvoke/tcp/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/Meal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/MealHistoryAndDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/MealHistoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/baiduapiinvoke/BaiduAPIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/baiduapiinvoke/BaiduAPIService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/ImageRecognitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/ImageRecognitionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/WeightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/WeightController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dietrecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dietrecord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/接口文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/接口文档.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/AuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/BaiduAPIService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/glodon/aihome/baiduapiinvoke/FileUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/glodon/aihome/controller/ImageRecognitionController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/glodon/aihome/controller/WeightController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/glodon/aihome/controller/WeightController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/dietrecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/dietrecord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/glodon/aihome/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/glodon/aihome/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/接口文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/接口文档.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -181,7 +172,8 @@
       <workItem from="1594711295888" duration="4485000" />
       <workItem from="1594772133945" duration="159000" />
       <workItem from="1594772731328" duration="25235000" />
-      <workItem from="1594894924453" duration="8803000" />
+      <workItem from="1594894924453" duration="9860000" />
+      <workItem from="1595000764679" duration="4389000" />
     </task>
     <task id="LOCAL-00001" summary="在接口文档中新增了测试账户，修改了调用百度API的逻辑">
       <created>1594775444676</created>
@@ -204,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594805821865</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改接口，去掉前端上传按钮，完成拍完照以后直接上传，对图片进行了十倍压缩">
+      <created>1594919575629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594919575629</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,17 +227,7 @@
     <MESSAGE value="在接口文档中新增了测试账户，修改了调用百度API的逻辑" />
     <MESSAGE value="完成了大部分逻辑，具体见接口文档.txt" />
     <MESSAGE value="添加了查询用户饮食历史的功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了查询用户饮食历史的功能" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/WeightController.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="修改接口，去掉前端上传按钮，完成拍完照以后直接上传，对图片进行了十倍压缩" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改接口，去掉前端上传按钮，完成拍完照以后直接上传，对图片进行了十倍压缩" />
   </component>
 </project>
