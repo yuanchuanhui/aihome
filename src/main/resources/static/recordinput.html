@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=yes" />
+    <title>FitDiet</title>
+    <!-- head 中 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+
+    <!-- body 最后 -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+
+    <!-- 页面CSS样式 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+
+    <style>
+        .page {
+            padding: 5px 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="user-box">
+    <div class="user-left">
+        <a href="#" class="user-img" style="background:url(images/user-img.jpg);background-size: cover;"></a>
+    </div>
+    <div class="user-right" style="width: 65%;margin-left: 45%;margin-top: 1%;">
+        <div>
+            <p>用户：</p>
+            <span style="padding: 12px">大东</span>
+        </div>
+        <div><p>蛋白质: </p><span style="padding: 12px">250g</span></div>
+        <div><p>糖类: </p><span style="padding: 12px">65g</span></div>
+        <div><p>脂肪: </p><span style="padding: 12px">30g</span></div>
+    </div>
+
+</div>
+<h4 class="bd_white wd-dqsj" style="text-align:left;margin-bottom: 1px;margin-top: 15px;">
+    食材记录
+    <!--<span id="date"></span>
+    <span id="day"></span>
+    <span id="week"></span>-->
+</h4>
+<!--</div>-->
+
+<div class="all_title">
+    <style>
+                    [data-target] {
+                        border-bottom: 10px solid #F3F3F3;
+                    }
+
+                    .weui-form-preview__item img {
+                        float: left;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+
+                    .labelcolor {
+                        color: #1f9af3;
+                    }
+
+                    .weui-form-preview-margin {
+                        margin-top: 5px;
+                    }
+
+                    div [id] {
+                        display: none;
+                        border: none;
+                    }
+                    .weui-form-preview__item img.addfood {
+                        float: left;
+                        margin-top: 2px;
+                        width: 18px;
+                        height: 18px;
+                        color: rgb(61, 65, 69);
+                    }
+                    .all_title {
+                        overflow: auto;
+                        width: auto;
+                        height: 700px;
+                    }
+
+                </style>
+    <div class="container stusys_con">
+        <div class="page preview js_show">
+            <div class="page__bd">
+                <div class="weui-form-preview">
+                    <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
+                        <div class="weui-form-preview__item">
+                            <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                            <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">牛肉</label>
+                            <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__hd js-item" data-target="#CourseGrade">
+                        <div class="weui-form-preview__item">
+                            <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                            <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">芹菜</label>
+                            <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
+                        <div class="weui-form-preview__item">
+                            <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                            <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">猪肉</label>
+                            <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
+                        </div>
+                    </div>
+                        <div class="weui-form-preview__item">
+                            <a href="dietrecord.html">  <img class="addfood" src="img/MyImage/unfold.png" style="float: left;">  </a>
+                            <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">点击添加食材</label>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<h4 class="bd_white wd-dqsj" style="text-align:left;margin-bottom: 1px;margin-top: 15px;">
+    调料记录
+    <!--<span id="date"></span>
+    <span id="day"></span>
+    <span id="week"></span>-->
+</h4>
+
+<div class="container stusys_con">
+    <div class="page preview js_show">
+        <div class="page__bd">
+            <div class="weui-form-preview">
+                <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
+                    <div class="weui-form-preview__item">
+                        <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">牛肉</label>
+                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
+                    </div>
+                </div>
+                <div class="weui-form-preview__hd js-item" data-target="#CourseGrade">
+                    <div class="weui-form-preview__item">
+                        <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">芹菜</label>
+                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
+                    </div>
+                </div>
+                <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
+                    <div class="weui-form-preview__item">
+                        <a href="dietrecord.html">  <img src="img/MyImage/fold.png" style="float: right;">  </a>
+                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">猪肉</label>
+                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor" style="float:right">摄入量: &nbsp xxx克</label>
+                    </div>
+                </div>
+                <div class="weui-form-preview__hd js-item" data-target="#StuCulPlan">
+                    <div class="weui-form-preview__item">
+                        <a href="dietrecord.html">  <img class="addfood" src="img/MyImage/unfold.png" style="float: left;">  </a>
+                        <label class="weui-form-preview__label layui-col-lg2 layui-col-md3 labelcolor">点击添加食材</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="demos-content-padded">
+        <a href="javascript:;" id="show-actions" class="weui-btn weui-btn_primary" style="background: #1892f9;width: 60%;margin-bottom: 20px;display: block;margin-top: 20px;">
+            查看食材能量
+        </a>
+    </div>
+</div>
+
+</div>
+
+<!-- footer -->
+<footer style="margin-top: 75px;bottom: 0em;" class="weui-footer_fixed-bottom footer">
+    <ul>
+        <!--未点击CLASS为 icon-home-on  点击后 icon-home-on  --->
+        <li><a href="dietmanage.html"><i class="icon iconfont icon-home i-36"></i>膳食控制</a> </li>
+        <!--未点击CLASS为 icon-gongneng  点击后 icon-gongneng-on --->
+        <li><a href="foodandnews.html"><i class="icon iconfont icon-gongneng i-36"></i>健康咨询</a></li>
+        <!--未点击CLASS为 icon-down 点击后 icon-down-on --->
+        <li><a href="me.html"><i class="icon iconfont icon-down i-36"></i>个人中心</a></li>
+    </ul>
+</footer>
+<!--</div>
+</div>-->
+</body>
+</html>
