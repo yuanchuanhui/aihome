@@ -79,7 +79,7 @@ public class MealHistoryController {
     }
 
     /**
-     * deleteUserMeal?date=2020年7月20日&eattime=1
+     * deleteUserMeal?date=2020年7月20日&eaTtime=1
      */
     @RequestMapping("deleteUserMeal")
     @ResponseBody
@@ -88,6 +88,12 @@ public class MealHistoryController {
         calendar.setTime(date);
         int dayOfYear = calendar.get(Calendar.DAY_OF_YEAR);
         user.getMeals().get(dayOfYear).getMealHistory().get(eatTime).remove(food);
+        if(user.getMeals().get(dayOfYear).getMealHistory().get(eatTime).size() == 0){
+            user.getMeals().get(dayOfYear).getMealHistory().remove(eatTime);
+        }
+        if(user.getMeals().get(dayOfYear).getMealHistory().size() == 0){
+            user.getMeals().remove(dayOfYear);
+        }
         return "success";
     }
 
