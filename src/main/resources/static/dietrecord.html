@@ -94,7 +94,37 @@
                                          <div class="img fl hide"></div>
                                          <div class="add fl"></div>
                                                <form id="imgform" class="file" style="background-color: #AADFFD;" action="/imageRecognition" method="post" enctype="multipart/form-data">
-                                                           <input type="file" accept="image/*" capture="user" src="./img/qrcode.jpeg" style="margin-bottom: 15px;" class="hide" id="upimg3"  name="file" value="拍照上传" onchange="document.getElementById('imgform').submit()">
+                                                   <script>
+                                                       function submitImage(){
+                                                           alert('准备提交')
+                                                           var formData = new FormData();
+                                                           formData.append("file", document.getElementById("upimg3").files[0]);
+                                                           $.ajax({
+                                                               url: "imageRecognition",
+                                                               type: "POST",
+                                                               data: formData,
+                                                               /**
+                                                                *必须false才会自动加上正确的Content-Type
+                                                                */
+                                                               contentType: false,
+                                                               /**
+                                                                * 必须false才会避开jQuery对 formdata 的默认处理
+                                                                * XMLHttpRequest会对 formdata 进行正确的处理
+                                                                */
+                                                               processData: false,
+                                                               success: function (data) {
+                                                                   obj = JSON.parse(data)
+                                                                   console.log(obj)
+                                                               },
+                                                               error: function () {
+                                                                   alert("上传失败！");
+                                                                   $("#imgWait").hide();
+                                                               }
+                                                           });
+                                                       }
+                                                   </script>
+                                                   <input type="file" accept="image/*" capture="user" src="./img/qrcode.jpeg" style="margin-bottom: 15px;" class="hide"
+                                                          id="upimg3"  name="file" value="拍照上传" onchange="submitImage()">
                                                </form>
                                     </div>
                             </div>
@@ -219,9 +249,8 @@
 
         <script>
             function submit() {
-
-                         $.alert("你添加了食材: 苹果");
-                    $.hideLoading();
+                $.alert("你添加了食材: 苹果");
+                $.hideLoading();
             }
         </script>
 
