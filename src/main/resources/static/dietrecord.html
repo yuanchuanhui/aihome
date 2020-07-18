@@ -71,20 +71,8 @@
             <a href="dietmanage.html" style="margin-right:10px;"><img src="img/MyImage/home_nav.png" style="margin-top:8px"></a>
         </div>
         <div class="all_title" style="margin-top: 43px;">
-
-            <div class="weui-tab stuinfo_title">
-                <div class="weui-navbar" style="position:fixed; margin-top:40px;">
-                    <a class="weui-navbar__item weui-bar__item--on" href="#StuLeaveHistory">
-                        手动输入
-                        <span class="stuinfo_title_ac"></span>
-                    </a>
-                    <a class="weui-navbar__item" href="#VacaApply">
-                        智能识别
-                        <span class=""></span>
-                    </a>
-                </div>
                 <div class="weui-tab__bd stumag_con">
-                    <div id="StuLeaveHistory" class="weui-tab__bd-item weui-tab__bd-item--active">
+
                         <div class="weui-search-bar" style="z-index:9">
                             <form class="weui-search-bar__form">
                                 <div class="weui-search-bar__box" style="height:auto;">
@@ -96,27 +84,26 @@
                                     <span>搜索</span>
                                 </label>
                             </form>
+                            <a href="#" id="scan">  <img src="img/MyImage/scan1.png" style="float: right;width: 25px;margin-left:15px">  </a>
                             <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
                         </div>
-                        <div class="weui-btn-area evaform_con_btn">
-                            <a class="weui-btn weui-btn_primary" id="btnStuMagSubmit" onclick="submit();">提交</a>
-                        </div>
-                    </div>
 
-                    <div id="VacaApply" class="weui-tab__bd-item">
                         <div class="weui-cells weui-cells_form stumag_con_line">
                             <div class="weui-btn-area evaform_con_btn">
-                              <div style="height: 80px; margin:0 auto;" class="imgs clear">
-                                        <div class="img fl hide"></div>
-                                               <div class="add fl"></div>
-                                                     <form id="imgform" class="file" style="background-color: #AADFFD;" action="/imageRecognition" method="post" enctype="multipart/form-data">
-                                                           <input type="file" src="./img/qrcode.jpeg" style="display: block;margin-bottom: 15px;" class="hide" id="upimg3" accept="image/*" name="file" value="拍照上传" onchange="document.getElementById('imgform').submit()">
-<!--                                                           <input type="submit" value="提交文件"/>-->
-                                                     </form>
-                                        </div>
+                                    <div style="height: 80px; margin:0px auto;" class="imgs clear">
+                                         <div class="img fl hide"></div>
+                                         <div class="add fl"></div>
+                                               <form id="imgform" class="file" style="background-color: #AADFFD;" action="/imageRecognition" method="post" enctype="multipart/form-data">
+                                                           <input type="file" accept="image/*" capture="user" src="./img/qrcode.jpeg" style="margin-bottom: 15px;" class="hide" id="upimg3"  name="file" value="拍照上传" onchange="document.getElementById('imgform').submit()">
+                                               </form>
+                                    </div>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="weui-btn-area evaform_con_btn" style="margin-top:80px">
+                            <a class="weui-btn weui-btn_primary" id="btnStuMagSubmit" onclick="submit();">提交</a>
+                        </div>
+
                 </div>
             </div>
 
@@ -126,49 +113,13 @@
 
         <script>
             $(function () {
-                $(".js-item").click(function () {
-                    $(this).next("div").toggle();
-                    if ($(this).next("div").is(":hidden")) {
-                        $(this).find('.iconfont').removeClass("icon-rotate");
-                    }
-                    else {
-                        $(this).find('.iconfont').addClass("icon-rotate");
-                    }
+                $("#scan").click(function () {
+                    $('.add').trigger('click');
                 });
-                $(".weui-navbar__item").click(function () {
-                    $(".weui-navbar__item").each(function () {
-                        $(this).children().removeClass("stuinfo_title_ac");
-                    });
-                    $(this).children().addClass("stuinfo_title_ac");
-                });
-            })
+             })
         </script>
 
         <script>
-<!--                $("#uoloads").change(function () {-->
-<!--                    var this_ = $(this);-->
-<!--                    console.log("12345");-->
-<!--                    console.log($("#uoloads"));-->
-<!--                    var file = document.getElementById("uoloads").files[0];-->
-<!--                    var size = (file.size / 1024).toFixed(2);-->
-<!--                    console.log(size);-->
-<!--                    if (size <= 5120) {-->
-<!--                        var img = file;-->
-<!--                        var formData = new FormData();-->
-<!--                        formData.append("picture", img);-->
-<!--                        uploadPic(formData, this_, 1);-->
-<!--                    } else {-->
-<!--                        swal({-->
-<!--                            title: ' ',-->
-<!--                            text: '您的图片超过5M',-->
-<!--                            type: 'warning',-->
-<!--                            showConfirmButton: false,-->
-<!--                            timer: 1500-->
-<!--                        });-->
-<!--                    }-->
-<!--                });-->
-
-
             $('.add').on('click', function () {
                 var this_ = $(this);
                 var ua = navigator.userAgent.toLowerCase();
@@ -177,6 +128,7 @@
                     this_.next("input").attr('capture', 'camera');
                 }
                 this_.next("input").fadeOut();
+                $.showLoading("正在提交数据");
                 // 这里是为了能够多次选定同一张图片
                 this_.after('<input type="file" class="hide" id="upimg4" accept="image/*">');
                 var imglen = this_.parent(".imgs").children('.img').children("img").length;
@@ -261,45 +213,15 @@
                         alert(JSON.stringify(data));
                     }
                 });
+                $.hideLoading();
             }
         </script>
 
-
-
         <script>
             function submit() {
-                if ($("#from_VacateReasonName").val() == "" || $("#from_VacateReasonName").val() == null) {
-                    $.alert("请先选择请假原因！");
-                    return;
-                }
-                console.log($("#from_FromDay").val());
-                if ($("#from_FromDay").val() == "" || $("#from_FromDay").val() == null || $("#from_EndDay").val() == "" || $("#from_EndDay").val() == "") {
-                    $.alert("请先选择请假日期！");
-                    return;
-                }
-                $.confirm("提交后不能修改，确认提交么？", function () {
-                    $.showLoading("正在提交数据");
-                    var Reason = null;
-                    switch ($("#from_VacateReasonName").val()) {
-                        case '事假': Reason = "2"; break;
-                        case '病假': Reason = "1"; break;
-                        case '外出实习': Reason = "3"; break;
-                        case '出国': Reason = "4"; break;
-                    }
-                    $.post("StuMag_Leave/SaveStuMagLeave", {
-                        Sno: "-1",
-                        VacateReason: Reason,
-                        VacateMsg: $("#VacateMsg").val(),
-                        FromDay: (Common.formattoUTC($("#from_FromDay").val())),
-                        EndDay: (Common.formattoUTC($("#from_EndDay").val()))
-                    }, function (json) {
-                        $.hideLoading();
-                        $.alert(json, "", function () {
-                            //点击确认后的回调函数
-                            window.location.href = "./StuMag_Leave";
-                        });
-                    }, "json");
-                });
+
+                         $.alert("你添加了食材: 苹果");
+                    $.hideLoading();
             }
         </script>
 
