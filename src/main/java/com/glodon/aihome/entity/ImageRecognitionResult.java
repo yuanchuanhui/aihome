@@ -1,23 +1,43 @@
 package com.glodon.aihome.entity;
 
+import java.util.Arrays;
+
 public class ImageRecognitionResult {
 
-    private String name;
-    private double score;
+    private String log_id;
+    private int result_num;
+    private OneImageRecognitionResult[] result;
 
-    public String getName() {
-        return name;
+    public String getLog_id() {
+        return log_id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLog_id(String log_id) {
+        this.log_id = log_id;
     }
 
-    public double getScore() {
-        return score;
+    public int getResult_num() {
+        return result_num;
     }
 
-    public void setScore(double score) {
-        this.score = score;
+    public void setResult_num(int result_num) {
+        this.result_num = result_num;
+    }
+
+    public OneImageRecognitionResult[] getResult() {
+        return result;
+    }
+
+    public void setResult(OneImageRecognitionResult[] result) {
+        this.result = result;
+    }
+
+    @Override
+    public String toString() {
+        return "ImageRecognitionResult{" +
+                "log_id='" + log_id + '\'' +
+                ", result_num=" + result_num +
+                ", result=" + Arrays.toString(result) +
+                '}';
     }
 }

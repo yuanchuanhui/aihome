@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d421c31f-f21b-474d-b79b-30abecfcdf7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/ImageRecognitionResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/GsonTesst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/OneImageRecognitionResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/Variable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/ImageRecognitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/ImageRecognitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/MealHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/MealHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/ImageRecognitionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/ImageRecognitionResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dietmanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dietmanage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/接口文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/接口文档.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/dietmanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/dietmanage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/接口文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/接口文档.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +54,16 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/target/classes" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.glodon.aihome.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/glodon/aihome/baiduapiinvoke" />
@@ -59,11 +71,6 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/js" />
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/target/classes" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -105,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySocketClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.glodon.aihome.baiduapiinvoke.tcp.MySocketClient" />
+    <configuration name="GsonTesst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.glodon.aihome.GsonTesst" />
       <module name="aihome" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.glodon.aihome.baiduapiinvoke.tcp.*" />
+          <option name="PATTERN" value="com.glodon.aihome.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.glodon.aihome.entity.NewsTest" />
+    <configuration name="MySocketClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.glodon.aihome.baiduapiinvoke.tcp.MySocketClient" />
       <module name="aihome" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.glodon.aihome.entity.*" />
+          <option name="PATTERN" value="com.glodon.aihome.baiduapiinvoke.tcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,10 +154,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AIHomeApplication" />
+        <item itemvalue="Application.GsonTesst" />
         <item itemvalue="Application.MySocketClient" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.BaiduAPIService" />
-        <item itemvalue="Application.NewsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +180,7 @@
       <workItem from="1594894924453" duration="9860000" />
       <workItem from="1595000764679" duration="4389000" />
       <workItem from="1595033764161" duration="4836000" />
-      <workItem from="1595052415839" duration="4422000" />
+      <workItem from="1595052415839" duration="6601000" />
     </task>
     <task id="LOCAL-00001" summary="在接口文档中新增了测试账户，修改了调用百度API的逻辑">
       <created>1594775444676</created>
@@ -224,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595055248506</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修改了前端页面，点击scan则可进行拍照">
+      <created>1595057269128</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595057269128</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,5 +267,16 @@
     <MESSAGE value="修改了查询记录的返回值，没有值的项不会返回" />
     <MESSAGE value="修改了前端页面，点击scan则可进行拍照" />
     <option name="LAST_COMMIT_MESSAGE" value="修改了前端页面，点击scan则可进行拍照" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/PageController.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
