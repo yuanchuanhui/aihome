@@ -43,7 +43,7 @@ public class MealHistoryController {
         }
         List<MealHistoryAndDate> res = new ArrayList<>();
         for (Map.Entry<Integer, NutritionOfDay> entry : user.getMeals().entrySet()) {
-            if(date != null && entry.getKey() != dayOfYear){
+            if(date != null && !entry.getKey().equals(dayOfYear)){
                 continue;
             }
             // 遍历每一天
@@ -51,8 +51,11 @@ public class MealHistoryController {
             history.setDate(entry.getKey());
             List<Map<String, Object>> list = new ArrayList<>();
             Map<Integer, Map<String, Double>> mealHistory = entry.getValue().getMealHistory();
+            if(mealHistory.size() == 0){
+                continue;
+            }
             for (Map.Entry<Integer, Map<String, Double>> mapEntry : mealHistory.entrySet()) {
-                if(eatTime != null && mapEntry.getKey() != eatTime){
+                if(eatTime != null && !mapEntry.getKey().equals(eatTime)){
                     continue;
                 }
                 // 遍历每一餐
