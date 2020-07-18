@@ -83,11 +83,11 @@ public class MealHistoryController {
      */
     @RequestMapping("deleteUserMeal")
     @ResponseBody
-    public String deleteUserMeal(Date date, int eatTime){
+    public String deleteUserMeal(Date date, int eatTime, String food){
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         int dayOfYear = calendar.get(Calendar.DAY_OF_YEAR);
-        user.getMeals().get(dayOfYear).getMealHistory().remove(eatTime);
+        user.getMeals().get(dayOfYear).getMealHistory().get(eatTime).remove(food);
         return "success";
     }
 

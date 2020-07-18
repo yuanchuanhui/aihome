@@ -4,6 +4,10 @@
     <list default="true" id="d421c31f-f21b-474d-b79b-30abecfcdf7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/MealHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/MealHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dietrecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dietrecord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/接口文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/接口文档.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/dietrecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/dietrecord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/接口文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/接口文档.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +171,8 @@
       <workItem from="1594772731328" duration="25235000" />
       <workItem from="1594894924453" duration="9860000" />
       <workItem from="1595000764679" duration="4389000" />
-      <workItem from="1595033764161" duration="3348000" />
+      <workItem from="1595033764161" duration="4836000" />
+      <workItem from="1595052415839" duration="2369000" />
     </task>
     <task id="LOCAL-00001" summary="在接口文档中新增了测试账户，修改了调用百度API的逻辑">
       <created>1594775444676</created>
@@ -204,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595035994068</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改了查询记录的返回值，没有值的项不会返回">
+      <created>1595037375766</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595037375766</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +242,7 @@
     <MESSAGE value="添加了查询用户饮食历史的功能" />
     <MESSAGE value="修改接口，去掉前端上传按钮，完成拍完照以后直接上传，对图片进行了十倍压缩" />
     <MESSAGE value="修改了上传图片的前端代码，在form标签内添加了一段js函数用于提交文件，可以保证页面不会跳转，在其中接收了返回数据且打印在了控制台中" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了上传图片的前端代码，在form标签内添加了一段js函数用于提交文件，可以保证页面不会跳转，在其中接收了返回数据且打印在了控制台中" />
+    <MESSAGE value="修改了查询记录的返回值，没有值的项不会返回" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了查询记录的返回值，没有值的项不会返回" />
   </component>
 </project>

@@ -45,5 +45,5 @@ eattime=1,2,3,0，代表早午晚餐和加餐
 date是日期，类型是字符串，我从前端可以很方便获取到
 PS:日期格式2020-7-20，实现方便吗；且最好用eatTime而不是eattime，驼峰命名法
 
-删除饮食记录接口：http://localhost:8080/deleteUserMeal?date=2020年7月20日&eattime=1
+删除饮食记录接口：http://localhost:8080/deleteUserMeal?date=2020-7-20&eattime=1&food=面条
 返回值：success /  fail
