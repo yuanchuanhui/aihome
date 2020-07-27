@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d421c31f-f21b-474d-b79b-30abecfcdf7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/GsonTesst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/OneImageRecognitionResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/ImageRecognitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/controller/ImageRecognitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/ImageRecognitionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/entity/ImageRecognitionResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dietmanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dietmanage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/接口文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/接口文档.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/dietmanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/dietmanage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/接口文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/接口文档.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/GsonTesst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/GsonTest.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +29,10 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -45,13 +40,15 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/glodon/aihome/baiduapiinvoke" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -72,18 +69,6 @@
       <recent name="$PROJECT_DIR$/src/main/resources/js" />
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AIHomeApplication">
     <configuration name="BaiduAPIService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -112,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GsonTesst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.glodon.aihome.GsonTesst" />
+    <configuration name="GsonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.glodon.aihome.GsonTest" />
       <module name="aihome" />
       <extension name="coverage">
         <pattern>
@@ -154,7 +139,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AIHomeApplication" />
-        <item itemvalue="Application.GsonTesst" />
+        <item itemvalue="Application.GsonTest" />
         <item itemvalue="Application.MySocketClient" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.BaiduAPIService" />
@@ -180,7 +165,13 @@
       <workItem from="1594894924453" duration="9860000" />
       <workItem from="1595000764679" duration="4389000" />
       <workItem from="1595033764161" duration="4836000" />
-      <workItem from="1595052415839" duration="6601000" />
+      <workItem from="1595052415839" duration="7283000" />
+      <workItem from="1595066536781" duration="614000" />
+      <workItem from="1595243232483" duration="42000" />
+      <workItem from="1595247580025" duration="1159000" />
+      <workItem from="1595313017158" duration="1896000" />
+      <workItem from="1595407757996" duration="628000" />
+      <workItem from="1595812175493" duration="123000" />
     </task>
     <task id="LOCAL-00001" summary="在接口文档中新增了测试账户，修改了调用百度API的逻辑">
       <created>1594775444676</created>
@@ -238,24 +229,30 @@
       <option name="project" value="LOCAL" />
       <updated>1595057269128</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改了上传图片的返回值，修改了dietmanage.html页面，不过这个页面没修改完，我在文档里写了修改方式，你可以继续改，确定餐次的功能实现完毕">
+      <created>1595059459433</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595059459433</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of github.com:yuanchuanhui/FitDiet&#10;&#10;# Conflicts:&#10;#&#9;.idea/misc.xml" />
@@ -266,7 +263,58 @@
     <MESSAGE value="修改了上传图片的前端代码，在form标签内添加了一段js函数用于提交文件，可以保证页面不会跳转，在其中接收了返回数据且打印在了控制台中" />
     <MESSAGE value="修改了查询记录的返回值，没有值的项不会返回" />
     <MESSAGE value="修改了前端页面，点击scan则可进行拍照" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了前端页面，点击scan则可进行拍照" />
+    <MESSAGE value="修改了上传图片的返回值，修改了dietmanage.html页面，不过这个页面没修改完，我在文档里写了修改方式，你可以继续改，确定餐次的功能实现完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了上传图片的返回值，修改了dietmanage.html页面，不过这个页面没修改完，我在文档里写了修改方式，你可以继续改，确定餐次的功能实现完毕" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="297" y="40" width="800" height="712" key="#Plugins" timestamp="1595812268661">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state x="297" y="40" width="800" height="712" key="#Plugins/39.27.1327.741@39.27.1327.741" timestamp="1595812268661" />
+    <state width="1273" height="168" key="GridCell.Tab.0.bottom" timestamp="1595067800082">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state width="1273" height="168" key="GridCell.Tab.0.bottom/39.27.1327.741@39.27.1327.741" timestamp="1595067800082" />
+    <state width="1273" height="168" key="GridCell.Tab.0.center" timestamp="1595067800082">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state width="1273" height="168" key="GridCell.Tab.0.center/39.27.1327.741@39.27.1327.741" timestamp="1595067800082" />
+    <state width="1273" height="168" key="GridCell.Tab.0.left" timestamp="1595067800081">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state width="1273" height="168" key="GridCell.Tab.0.left/39.27.1327.741@39.27.1327.741" timestamp="1595067800081" />
+    <state width="1273" height="168" key="GridCell.Tab.0.right" timestamp="1595067800082">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state width="1273" height="168" key="GridCell.Tab.0.right/39.27.1327.741@39.27.1327.741" timestamp="1595067800082" />
+    <state width="1273" height="168" key="GridCell.Tab.1.bottom" timestamp="1595067800082">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state width="1273" height="168" key="GridCell.Tab.1.bottom/39.27.1327.741@39.27.1327.741" timestamp="1595067800082" />
+    <state width="1273" height="168" key="GridCell.Tab.1.center" timestamp="1595067800082">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state width="1273" height="168" key="GridCell.Tab.1.center/39.27.1327.741@39.27.1327.741" timestamp="1595067800082" />
+    <state width="1273" height="168" key="GridCell.Tab.1.left" timestamp="1595067800082">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state width="1273" height="168" key="GridCell.Tab.1.left/39.27.1327.741@39.27.1327.741" timestamp="1595067800082" />
+    <state width="1273" height="168" key="GridCell.Tab.1.right" timestamp="1595067800082">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state width="1273" height="168" key="GridCell.Tab.1.right/39.27.1327.741@39.27.1327.741" timestamp="1595067800082" />
+    <state x="184" y="31" key="SettingsEditor" timestamp="1595812297068">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state x="184" y="31" key="SettingsEditor/39.27.1327.741@39.27.1327.741" timestamp="1595812297068" />
+    <state x="472" y="306" width="461" height="180" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595248110821">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state x="472" y="306" width="461" height="180" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/39.27.1327.741@39.27.1327.741" timestamp="1595248110821" />
+    <state x="365" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1595812276420">
+      <screen x="39" y="27" width="1327" height="741" />
+    </state>
+    <state x="365" y="89" width="672" height="678" key="search.everywhere.popup/39.27.1327.741@39.27.1327.741" timestamp="1595812276420" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
