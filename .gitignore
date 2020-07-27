@@ -94,4 +94,4 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 /.idea/
-#src/main/java/com/glodon/aihome/Ignored.java
+src/main/java/com/glodon/aihome/Ignored.java
