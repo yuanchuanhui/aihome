@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d421c31f-f21b-474d-b79b-30abecfcdf7e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/GsonTesst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/glodon/aihome/GsonTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d421c31f-f21b-474d-b79b-30abecfcdf7e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +168,7 @@
       <workItem from="1595313017158" duration="1896000" />
       <workItem from="1595407757996" duration="628000" />
       <workItem from="1595812175493" duration="123000" />
+      <workItem from="1595812319069" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="在接口文档中新增了测试账户，修改了调用百度API的逻辑">
       <created>1594775444676</created>
@@ -236,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595059459433</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="添加了.gitignore文件">
+      <created>1595812482850</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595812482850</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +268,8 @@
     <MESSAGE value="修改了查询记录的返回值，没有值的项不会返回" />
     <MESSAGE value="修改了前端页面，点击scan则可进行拍照" />
     <MESSAGE value="修改了上传图片的返回值，修改了dietmanage.html页面，不过这个页面没修改完，我在文档里写了修改方式，你可以继续改，确定餐次的功能实现完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了上传图片的返回值，修改了dietmanage.html页面，不过这个页面没修改完，我在文档里写了修改方式，你可以继续改，确定餐次的功能实现完毕" />
+    <MESSAGE value="添加了.gitignore文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了.gitignore文件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="297" y="40" width="800" height="712" key="#Plugins" timestamp="1595812268661">
